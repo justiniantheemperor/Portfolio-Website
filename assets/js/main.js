@@ -98,22 +98,36 @@
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with offset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+  // on('click', '.scrollto', function(e) {
+  //   if (select(this.hash)) {
+  //     e.preventDefault()
 
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
+  //     let body = select('body')
+  //     if (body.classList.contains('mobile-nav-active')) {
+  //       body.classList.remove('mobile-nav-active')
+  //       let navbarToggle = select('.mobile-nav-toggle')
+  //       navbarToggle.classList.toggle('bi-list')
+  //       navbarToggle.classList.toggle('bi-x')
+  //     }
+  //     scrollto(this.hash)
+  //   }
+  // }, true)
+
+  window.addEventListener('load', () => {
+    const headings = document.querySelectorAll('h2 a[name]');
+    
+    document.addEventListener('scroll', (e) => {
+      headings.forEach(ha => {
+        const rect = ha.getBoundingClientRect();
+        if(rect.top > 0 && rect.top < 150) {
+          const location = window.location.toString().split('#')[0];
+          history.replaceState(null, null, location + '#' + ha.name);
+        }
+      });
+    });
+  });
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -145,19 +159,19 @@
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
+  // let skilsContent = select('.skills-content');
+  // if (skilsContent) {
+  //   new Waypoint({
+  //     element: skilsContent,
+  //     offset: '80%',
+  //     handler: function(direction) {
+  //       let progress = select('.progress .progress-bar', true);
+  //       progress.forEach((el) => {
+  //         el.style.width = el.getAttribute('aria-valuenow') + '%'
+  //       });
+  //     }
+  //   })
+  // }
 
   /**
    * Porfolio isotope and filter
