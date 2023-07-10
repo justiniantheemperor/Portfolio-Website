@@ -444,6 +444,20 @@ section {
   border: 2px solid #1f5297;
 }
 
+.resume .resume-item .grade  {
+  float: right;
+  text-align: left;
+  width: 20px;
+}
+
+.resume .resume-item .gy  {
+  color:  #9bed19;
+}
+
+.resume .resume-item .g  {
+  color: #52a102;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
