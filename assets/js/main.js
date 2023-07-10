@@ -115,6 +115,9 @@
   //   }
   // }, true)
 
+  /**
+   * Update hash when scrolling to sections
+   */
   window.addEventListener('load', () => {
     const headings = document.querySelectorAll('h2 a[name]');
     
