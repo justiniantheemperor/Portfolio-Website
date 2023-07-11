@@ -9,6 +9,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -79,7 +85,8 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #ffffff;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 0, 0));
   overflow-y: auto;
 }
 
@@ -1004,7 +1011,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  /* background: #040b14; */
 }
 
 #footer .copyright {
