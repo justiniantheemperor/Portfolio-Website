@@ -484,6 +484,12 @@ section {
   width: 50%;
 }
 
+@media (min-width: 991.98px) {
+  .resume .top-col {
+    height:50%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
