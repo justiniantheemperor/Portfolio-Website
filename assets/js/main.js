@@ -53,6 +53,10 @@
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         navbarlink.classList.add('active')
+        var name = navbarlink.getAttribute("href")
+        console.log(navbarlink)
+        console.log(name)
+        locationChange(name)
       } else {
         navbarlink.classList.remove('active')
       }
@@ -60,6 +64,46 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
+
+
+  function locationChange(hash) {
+    console.log(hash)
+    switch(hash) {
+      case "#hero":
+      case "#home":
+      case "#":
+          document.getElementById("header").style.background = "#fe4600"; //red-orange
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          console.log("hero")
+          break;
+      case "#about": 
+          document.getElementById("header").style.background = "#ffb639"; //orange
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          break;
+      case "#resume": 
+          document.getElementById("header").style.background = "#00ff89"; //green
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          break;
+      case "#portfolio": 
+          document.getElementById("header").style.background = "#01ffff"; //blue
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          break;
+      case "#testimonials": 
+          document.getElementById("header").style.background = "#9a26f8"; //dark purple
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          break;
+      case "#contact": 
+          document.getElementById("header").style.background = "#f82d96"; //red-purple
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          break;
+      default:
+          document.getElementById("header").style.background = "gray";
+          document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
+          break;
+    }
+  }
+   window.addEventListener("hashchange", locationChange, false);
+
 
   /**
    * Scrolls to an element with header offset
@@ -133,7 +177,7 @@
   });
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Scroll with offset on page load with hash links in the url
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
