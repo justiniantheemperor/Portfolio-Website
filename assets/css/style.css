@@ -397,8 +397,20 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #00703e;
   position: relative;
+}
+
+.resume h2 {
+  color: #00703e;
+}
+
+.resume h2 {
+  color: #00703e;
+}
+
+.resume h2::after {
+  background: #389d43;
 }
 
 .resume .resume-item h4 {
@@ -413,7 +425,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #d4fdf1;
+  background: #c5ffcc;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -441,7 +453,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #00703e;
 }
 
 .resume .resume-item .right-col  {
@@ -453,12 +465,12 @@ section {
 
 
 .resume .resume-item .gy  {
-  color:  #9bed19;
+  color:  #73ca3b;
   text-align: left;
 }
 
 .resume .resume-item .g  {
-  color: #52a102;
+  color: #389d43;
   text-align: left
 }
 
@@ -467,7 +479,7 @@ section {
 }
 
 .resume button {
-  background: #14dda1;
+  background: #389d43;
   border: 0;
   padding: 10px 24px;
   transition: 0.4s;
@@ -475,7 +487,7 @@ section {
 }
 
 .resume button:hover {
-  background: #73f5ce;
+  background: #73ca3b;
 }
 
 .resume .experience-btn {
