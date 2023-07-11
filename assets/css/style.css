@@ -413,7 +413,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #d4fdf1;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -444,19 +444,46 @@ section {
   border: 2px solid #1f5297;
 }
 
-.resume .resume-item .grade  {
+.resume .resume-item .right-col  {
   float: right;
-  text-align: left;
+  text-align: right;
   width: 20px;
+  font-weight: bold;
 }
+
 
 .resume .resume-item .gy  {
   color:  #9bed19;
+  text-align: left;
 }
 
 .resume .resume-item .g  {
   color: #52a102;
+  text-align: left
 }
+
+.resume a {
+  color: #fff;
+}
+
+.resume button {
+  background: #14dda1;
+  border: 0;
+  padding: 10px 24px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.resume button:hover {
+  background: #73f5ce;
+}
+
+.resume .experience-btn {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
