@@ -542,11 +542,11 @@ section {
   text-align: left
 }
 
-.resume button {
+.resume .btn-primary {
   background: var(--teal2);
 }
 
-.resume button:hover {
+.resume .btn-primary:hover {
   background: var(--teal);
 }
 
@@ -1048,6 +1048,7 @@ section {
 .breadcrumbs h2 {
   font-size: 26px;
   font-weight: 300;
+  max-width: 80%;
 }
 
 .breadcrumbs ol {
