@@ -450,14 +450,6 @@ section {
   margin-bottom: 0;
 }
 
-/* .about button {
-  background: var(--green2);
-}
-
-.about button:hover {
-  background: var(--green);
-} */
-
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -572,6 +564,12 @@ section {
 @media (min-width: 991.98px) {
   .resume .top-col {
     height:50%;
+  }
+}
+
+@media (max-width: 240px) {
+  .resume .small-hide {
+    font-size: 0%;
   }
 }
 
