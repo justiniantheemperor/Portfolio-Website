@@ -15,7 +15,7 @@
   --orange:  #ffb639;
   --green:   #3ee396;
   --teal:    #00d4d4;
-  --blue:    #9a26f8;
+  --blue:    #7a26f8;
   --pink:    #f82d96;
 
 
@@ -23,10 +23,10 @@
   --orange2:  #bd7800;
   --green2:   #17945a;
   --teal2:    #009292;
-  --blue2:    #4b1577;
+  --blue2:    #4b1478;
   --pink2:    #aa075b;
 
-  --red3:     #ff7e68;
+  --red3:     #ff9e77;
   --orange3:  #fdcd7a;
   --green3:   #aaffc8;
   --teal3:    #c9f2f2;
@@ -37,7 +37,7 @@
   --orange4:  #fff4e0;
   --green4:   #f4fffa;
   --teal4:    #f2ffff;
-  --blue4:    #fbf8ff;
+  --blue4:    #f8f9ff;
   --pink4:    #fff2f9;
 
 }
@@ -55,6 +55,33 @@ a {
 a:hover {
   color: #37b3ed;
   text-decoration: none;
+}
+
+button {
+  border: 0;
+  padding: 10px 24px;
+  transition: 0.4s;
+  border-radius: 4px;
+  color: #fff;
+}
+
+button a {
+  color: #fff;
+}
+
+button a:hover {
+  color: #fff;
+  text-shadow:0px 0px 2px #fff;}
+
+.btn-cta {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn-cta:hover {
+  background: var(--orange);
+  color: #fff;
+  text-shadow:0px 0px 2px #fff;
 }
 
 h1,
@@ -112,8 +139,8 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #ffffff;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 0, 0));
+  background: #525252;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0));
   overflow-y: auto;
 }
 
@@ -293,7 +320,7 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 #hero h1 {
@@ -423,6 +450,14 @@ section {
   margin-bottom: 0;
 }
 
+/* .about button {
+  background: var(--green2);
+}
+
+.about button:hover {
+  background: var(--green);
+} */
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -520,16 +555,8 @@ section {
   text-align: left
 }
 
-.resume a {
-  color: #fff;
-}
-
 .resume button {
   background: var(--teal2);
-  border: 0;
-  padding: 10px 24px;
-  transition: 0.4s;
-  border-radius: 4px;
 }
 
 .resume button:hover {
@@ -1005,19 +1032,6 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--red);
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: var(--red3);
 }
 
 @keyframes animate-loading {
