@@ -8,6 +8,17 @@
 (function() {
   "use strict";
 
+  const root = document.documentElement;
+
+// Get the value of the colors defined in styles.css
+  const redColor = getComputedStyle(root).getPropertyValue('--red');
+  const orangeColor = getComputedStyle(root).getPropertyValue('--orange');
+  const greenColor = getComputedStyle(root).getPropertyValue('--green');
+  const tealColor = getComputedStyle(root).getPropertyValue('--teal');
+  const blueColor = getComputedStyle(root).getPropertyValue('--blue');
+  const pinkColor = getComputedStyle(root).getPropertyValue('--pink');
+
+
   /**
    * Easy selector helper function
    */
@@ -72,28 +83,28 @@
       case "#hero":
       case "#home":
       case "#":
-        document.getElementById("header").style.background = "#ffb639"; //orange
+        document.getElementById("header").style.background = orangeColor; //orange
         document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
         console.log("hero")
         break;
         case "#about": 
-        document.getElementById("header").style.background = "#00ff89"; //green
+        document.getElementById("header").style.background = greenColor; //green
         document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
         break;
         case "#resume": 
-        document.getElementById("header").style.background = "#01ffff"; //teal
+        document.getElementById("header").style.background = tealColor; //teal
         document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
         break;
         case "#portfolio": 
-        document.getElementById("header").style.background = "#9a26f8"; //blue purple
+        document.getElementById("header").style.background = blueColor; //blue purple
           document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
           break;
           case "#testimonials": 
-          document.getElementById("header").style.background = "#f82d96"; //dark pink
+          document.getElementById("header").style.background = pinkColor; //dark pink
           document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
           break;
           case "#contact": 
-          document.getElementById("header").style.background = "#fe4600"; //red-orange
+          document.getElementById("header").style.background = redColor; //red-orange
           document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
           break;
       default:

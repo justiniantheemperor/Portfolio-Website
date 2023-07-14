@@ -13,9 +13,9 @@
 :root {
   --red:     #fe4600;
   --orange:  #ffb639;
-  --green:   #3ee396;
-  --teal:    #00d4d4;
-  --blue:    #7a26f8;
+  --green:   #00ffbb;
+  --teal:    #01ffff;
+  --blue:    #7326f8;
   --pink:    #f82d96;
 
 
@@ -139,7 +139,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #525252;
+  background: #bbbbbb;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0));
   overflow-y: auto;
 }
