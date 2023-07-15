@@ -10,38 +10,6 @@
 # General
 --------------------------------------------------------------*/
 
-:root {
-  --red:     #fe4600;
-  --orange:  #ffb639;
-  --green:   #00ffbb;
-  --teal:    #01ffff;
-  --blue:    #7326f8;
-  --pink:    #f82d96;
-
-
-  --red2:     #ce3a00;
-  --orange2:  #bd7800;
-  --green2:   #17945a;
-  --teal2:    #009292;
-  --blue2:    #4b1478;
-  --pink2:    #aa075b;
-
-  --red3:     #ff9e77;
-  --orange3:  #fdcd7a;
-  --green3:   #aaffc8;
-  --teal3:    #c9f2f2;
-  --blue3:    #c6baff;
-  --pink3:    #f4a4cd;
-
-  --red4:     #fff5f0;
-  --orange4:  #fff4e0;
-  --green4:   #f4fffa;
-  --teal4:    #f2ffff;
-  --blue4:    #f8f9ff;
-  --pink4:    #fff2f9;
-
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -91,6 +59,66 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# General Colors
+--------------------------------------------------------------*/
+
+:root {
+  --red:     #fe4600;
+  --orange:  #ffb639;
+  --green:   #00ffbb;
+  --teal:    #02d7d7;
+  --blue:    #7326f8;
+  --pink:    #f82d96;
+
+
+  --red2:     #ce3a00;
+  --orange2:  #bd7800;
+  --green2:   #17945a;
+  --teal2:    #009292;
+  --blue2:    #4b1478;
+  --pink2:    #aa075b;
+
+  --red3:     #ff9e77;
+  --orange3:  #fdcd7a;
+  --green3:   #aaffc8;
+  --teal3:    #c9f2f2;
+  --blue3:    #c6baff;
+  --pink3:    #f4a4cd;
+
+  --red4:     #fff5f0;
+  --orange4:  #fff4e0;
+  --green4:   #f4fffa;
+  --teal4:    #f2ffff;
+  --blue4:    #f8f9ff;
+  --pink4:    #fff2f9;
+
+}
+
+.my-red-bg {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) var(--red);
+}
+
+.my-orange-bg {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) var(--orange);
+}
+
+.my-green-bg {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) var(--green);
+}
+
+.my-teal-bg {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) var(--teal);
+}
+
+.my-blue-bg {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) var(--blue);
+}
+
+.my-pink-bg {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) var(--pink);
 }
 
 /*--------------------------------------------------------------
@@ -183,9 +211,33 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #ffffff;
   color: #fff;
   text-decoration: none;
+}
+
+#header .profile .social-links .youtube:hover {
+  background: #ff0000;
+}
+
+#header .profile .social-links .reddit:hover {
+  background: #ff4500;
+}
+
+#header .profile .social-links .deviantart:hover {
+  background: #00e59b;
+}
+
+#header .profile .social-links .linkedin:hover {
+  background: #0a66c2;
+}
+
+#header .profile .social-links .discord:hover {
+  background: #5562ea;
+}
+
+#header .profile .social-links .github:hover {
+  background: #840884;
 }
 
 #main {
@@ -1090,7 +1142,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: #6f7180;
   font-size: 14px;
   position: fixed;
   left: 0;
@@ -1108,8 +1160,7 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
-}
+  color: #6f7180;}
 
 @media (max-width: 1199px) {
   #footer {

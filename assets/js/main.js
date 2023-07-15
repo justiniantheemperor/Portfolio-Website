@@ -108,7 +108,7 @@
           document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
           break;
       default:
-          document.getElementById("header").style.background = "gray";
+          document.getElementById("header").style.background = "lightgray";
           document.getElementById("header").style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0), rgb(0, 0, 0))";
           break;
     }
