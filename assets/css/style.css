@@ -61,6 +61,13 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.white-bg {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+
 /*--------------------------------------------------------------
 # General Colors
 --------------------------------------------------------------*/
@@ -822,6 +829,7 @@ section {
 }
 
 .testimonials .testimonial-item {
+
   box-sizing: content-box;
   text-align: center;
   min-height: 320px;
@@ -838,6 +846,16 @@ section {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
+}
+
+.testimonials .testimonial-item h3 a {
+  color: var(--pink2);
+  text-decoration: underline;
+}
+
+.testimonials .testimonial-item h3 a:hover {
+  color: var(--pink);
+  text-decoration: underline;
 }
 
 .testimonials .testimonial-item h4 {
@@ -903,6 +921,11 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--pink);
+}
+
+.testimonials .swiper-wrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
 /*--------------------------------------------------------------
@@ -998,9 +1021,6 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .php-email-form .form-group {
