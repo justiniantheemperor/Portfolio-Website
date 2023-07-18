@@ -1012,9 +1012,7 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .icon:hover i {
   background: var(--red);
   color: #fff;
 }
