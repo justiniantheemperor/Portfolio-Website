@@ -534,7 +534,7 @@ section {
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 0 0 20px;
   margin-top: -2px;
   border-left: 2px solid var(--teal2);
   position: relative;
@@ -567,8 +567,8 @@ section {
   padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
-  padding-bottom: 0;
+.resume .resume-item ul li:last-child {
+  padding-bottom: 0px;
 }
 
 .resume .resume-item::before {
@@ -601,6 +601,10 @@ section {
   text-align: left
 }
 
+.resume button {
+  width: 200px;
+}
+
 .resume .btn-primary {
   background: var(--teal2);
 }
@@ -612,13 +616,8 @@ section {
 .resume .experience-btn {
   display: flex;
   justify-content: center;
-  width: 50%;
-}
-
-@media (min-width: 991.98px) {
-  .resume .top-col {
-    height:50%;
-  }
+  gap: 10px 20px; 
+  margin: 20px 10px 0px;
 }
 
 @media (max-width: 240px) {
@@ -626,7 +625,6 @@ section {
     font-size: 0%;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Portfolio
